@@ -11,9 +11,8 @@
 
 ## Project Description
 
-This repository contains the implementation and experiments for the ReLoRA paper. The project is structured to facilitate easy navigation and reproducibility of the experiments.
-
-Read the paper: [ReLoRA: High-Rank Training Through Low-Rank Updates](https://arxiv.org/pdf/2307.05695)
+This repository contains the implementation and experiments for the ReLoRA paper.
+paper: [ReLoRA: High-Rank Training Through Low-Rank Updates](https://arxiv.org/pdf/2307.05695)
 
 ## Directory Structure
 
