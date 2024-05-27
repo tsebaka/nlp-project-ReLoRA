@@ -39,3 +39,10 @@ def quadratic_weighted_kappa(y_pred, y_true):
         y_pred.clip(0, 5).round(0),
         weights='quadratic',
     )
+
+## Results
+
+| Metric Optimizer                | AdamW 3 epoch | AdamW Without reset optimizer | Adagrad 7 epoch | AdamW reset optimizer ½ weights | AdamW reset optimizer ¼ weights |
+|---------------------------------|---------------|-------------------------------|-----------------|-------------------------------|-------------------------------|
+| **QWK**                         | 0.741         | 0.690                         | 0.721           | 0.716                         | 0.730                         |
+| **MSE Loss per epoch**          | 0.500         | 0.601                         | 0.550           | 0.540                         | 0.531                         |
