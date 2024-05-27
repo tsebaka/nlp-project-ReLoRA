@@ -15,7 +15,7 @@ This repository contains the implementation and experiments for the ReLoRA paper
 
 paper: [ReLoRA: High-Rank Training Through Low-Rank Updates](https://arxiv.org/pdf/2307.05695)
 
-## Directory Structure
+## Source
 
 - **Data:** `.../src/data`
   - Contains all the datasets used for the experiments.
