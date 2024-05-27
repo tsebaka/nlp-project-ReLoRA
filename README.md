@@ -25,7 +25,7 @@ Read the paper: [ReLoRA: High-Rank Training Through Low-Rank Updates](https://ar
 
 ## Dataset and Metric
 
-The dataset and metric used for this project were taken from a competition on Kaggle.
+The dataset and metric used for this project were taken from a competition on Kaggle [Automated Essay Scoring 2.0](https://www.kaggle.com/competitions/learning-agency-lab-automated-essay-scoring-2/data)
 
 ### Metric
 
