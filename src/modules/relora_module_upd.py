@@ -84,7 +84,7 @@ class ReloraModule(L.LightningModule):
             self.init_lora()
     
     def configure_optimizers(self):
-        optimizer = optim.Adagrad(self.parameters(), lr=self.learning_rate)
+        optimizer = optim.AdamW(self.parameters(), lr=self.learning_rate)
         scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=10)
         return {"optimizer": optimizer, "lr_scheduler": {"scheduler": scheduler, "interval": "step"}}
 
