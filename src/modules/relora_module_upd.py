@@ -204,14 +204,14 @@ class ReloraModule(L.LightningModule):
     
     def lora_checkpoint_reset(self, checkpoint: Dict[str, Any]):
         print("=="*10)
-        # self.reset_optimizer()
+        self.reset_optimizer()
         self.merge_lora_weights
         self.model = get_peft_model(self.model, self.lora_config)
         self.count_parameters(self.model)
         # self.model.save_pretrained("src/models")
         checkpoint["state_dict"] = self.model.state_dict()
-        # self.reset_optimizer(in_place=True) if self.trainer.scaler is not None else self.reset_optimizer()    
-        # self.init_lora()
+        self.reset_optimizer(in_place=True) if self.trainer.scaler is not None else self.reset_optimizer()    
+        self.init_lora()
         self.count_parameters(self.model)
 
         return checkpoint
